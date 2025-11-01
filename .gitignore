@@ -1,24 +1,141 @@
-# Compiled class file
-*.class
+SORU 1) 1’den N’e kadar olan tüm tamsayıların küpünü konsola yazdıran programı yazınız. 
+Örneğin; N = 4 için  1, 8, 27, 64 yazdırılmalı. 
 
-# Log file
-*.log
+int N = 70;
 
-# BlueJ files
-*.ctxt
+for (int i = 1; i <= N; i++) {
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+int kup = i * i * i;
 
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
+System.out.print(kup);
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+if (i < N) {
+System.out.print(", ");
+            }
+        }
+
+SORU 2) 1’den N’e kadar olan tüm tamsayıların faktöriyelini konsola yazdıran bir program 
+yazınız. 
+Örneğin; N= 6 için         1! = 1 
+         2! = 2 
+        3! = 6 
+        4! = 24 
+        5! = 120 
+        6! = 720 
+
+int N = 5;
+int faktoryel = 1;
+for(int i = 1; i <= N; i++){
+faktoryel = faktoryel*i;
+}
+System.out.println("Faktoryel: " + faktoryel);
+
+SORU 3) Tanımlanan bir tamsayı değeri için çarpım tablosu oluşturan ve konsola yazdıran 
+programı yazınız. 
+Örneğin, 3 için   1 * 3 = 3 
+2 * 3 = 6 
+3 * 3 = 9 
+4 * 3 = 12 
+5 * 3 = 15 
+6 * 3 = 18 
+7 * 3 = 21 
+8 * 3 = 24 
+9 * 3 = 27 
+10 * 3 = 30
+
+int sayi = 3;
+
+for (int i = 1; i <= 10; i++) {
+int sonuc = i * sayi;
+System.out.println(i + " * " + sayi + " = " + sonuc);
+}
+
+SORU 4) Tanımlanan başlangıç ve bitiş sayıları arasındaki tüm tamsayıların toplamını ve 
+ortalamasını konsola yazdıran programı yazınız.
+
+int baslangic = 20;
+
+int bitis = 30;
+
+int toplam =0;
+
+int toplam =0;
+
+for(int i = baslangic; i<=bitis, i++){
+
+System.out.println( toplam += i);
+
+System.out.println(adet++);
+}
+double ortalama = (double) toplam / adet;
+
+System.out.println("Toplam = " + toplam);
+
+System.out.println("Ortalama = " + ortalama);
+
+SORU 5) Tanımlanan taban (a) ve üs (b) değerlerine göre ab ‘yi hesaplayan ve konsola 
+yazdıran programı yazınız. 
+Örneğin; taban = 2, üs = 5 için konsola 32 yazdırılmalı.
+
+int taban = 2;
+
+int us = 5;
+
+int sonuc  =1;
+
+for (int i = 1; i <= us; i++) {
+
+System.out.println(sonuc *= taban);
+}
+System.out.println(taban + "^" + us + " = " + sonuc);
+
+SORU 6) Tanımlanan iki tamsayının en büyük ortak bölenini (EBOB) bulan ve konsola 
+yazdıran programı yazınız.  
+Örneğin; 12 ve 30 için  6 yazdırılmalı.
+
+int sayi1 =12;
+
+int sayi2 =30;
+
+int ebob = 1;
+
+for(int i =1 ; i<=sayi1 && i<=sayi2; i++){
+
+if(sayi1 % i ==0 && sayi2 %  i == 0){
+
+System.out.println(ebob);
+}
+}
+System.out.println("EBOB(" + sayi1 + ", " + sayi2 + ") = " + ebob);
+
+SORU 7) Tanımlanan iki tamsayının en küçük ortak katını (EKOK) bulan ve konsola 
+yazdıran programı yazınız. 
+Örneğin; 12 ve 30 için  60 yazdırılmalı.
+
+int sayi1 =12;
+
+int sayi2 =30;
+
+int ekok = sayi1*sayi2;
+
+for (int i = 1; i <= ekok; i++) {
+
+if (i % sayi1 == 0 && i % sayi2 == 0) {
+
+System.out.println( ekok = i);
+          
+            }
+        }
+
+SORU 8) Tanımlanan bir tamsayının tüm pozitif bölenlerini konsola yazdıran programı 
+yazınız. 
+Örneğin; 48 sayısı için  1, 2, 3, 4, 6, 8, 12, 16, 24, 48 yazdırılmalı.
+
+
+
+
+
+
+
+
+        
